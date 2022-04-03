@@ -1,12 +1,12 @@
-﻿using Memory.Shared;
+﻿using Shared;
 using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Memory.Cache.InMemory.Entity
+namespace Cache.InMemory.Entity
 {
-    public interface IInMemory<TEntity, TKey> where TEntity : BaseEntity<TKey> where TKey : struct
+    public interface IOpeations<TEntity, TKey> where TEntity : BaseEntity<TKey> where TKey : struct
     {
         bool TryGetValue(Key<TEntity, TKey> key, out TEntity entity);
         bool TryGetValue(Key<TEntity, TKey> key, out IEnumerable<TEntity> entities);

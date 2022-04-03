@@ -1,10 +1,10 @@
-﻿using Memory.Shared;
+﻿using Shared;
 using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Memory.Cache.InMemory
+namespace Cache.InMemory
 {
     public class Utility : IUtility
     {

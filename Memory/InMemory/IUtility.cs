@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Memory.Cache.InMemory
+namespace Cache.InMemory
 {
     public interface IUtility
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Memory.Shared
+namespace Shared
 {
     public class BaseEntity<TEntityKey> where TEntityKey : struct
     {

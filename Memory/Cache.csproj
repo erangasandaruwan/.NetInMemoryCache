@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Cache\InMemory\Custom\" />
-    <Folder Include="Cache\Distributed\" />
+    <Folder Include="InMemory\Custom\" />
+    <Folder Include="Distributed\" />
   </ItemGroup>
 
   <ItemGroup>

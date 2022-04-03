@@ -1,9 +1,6 @@
-﻿using Memory.Shared;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Shared;
 
-namespace Memory.Cache.InMemory.Entity
+namespace Cache.InMemory.Entity
 {
     public class Key<TEntity, TKey> where TEntity : BaseEntity<TKey> where TKey : struct
     {
