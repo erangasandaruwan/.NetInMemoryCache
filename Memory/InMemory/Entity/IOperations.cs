@@ -6,10 +6,12 @@ using System.Text;
 
 namespace Cache.InMemory.Entity
 {
-    public interface IOpeations<TEntity, TKey> where TEntity : BaseEntity<TKey> where TKey : struct
+    public interface IOperations<TEntity, TKey> where TEntity : BaseEntity<TKey> where TKey : struct
     {
         bool TryGetValue(Key<TEntity, TKey> key, out TEntity entity);
         bool TryGetValue(Key<TEntity, TKey> key, out IEnumerable<TEntity> entities);
+        List<string> GetNameList();
+        List<ICacheEntry> GetAllObjects();
 
         void Set(Key<TEntity, TKey> key, TEntity entity);
         void Set(Key<TEntity, TKey> key, IEnumerable<TEntity> entities);
@@ -18,9 +20,6 @@ namespace Cache.InMemory.Entity
         void Reset(Key<TEntity, TKey> key, IEnumerable<TEntity> entities, string reason = "");
 
         void Remove(Key<TEntity, TKey> key);
-
-        List<ICacheEntry> FindAllObjects();
-
         void Clear();
     }
 }

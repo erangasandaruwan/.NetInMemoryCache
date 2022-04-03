@@ -66,7 +66,7 @@ namespace Cache.InMemory
             }
         }
 
-        public List<ICacheEntry> FindAllEntityObjects()
+        public List<ICacheEntry> GetAllEntityObjects()
         {
             // Get the empty definition for the EntriesCollection
             var cacheEntriesCollectionDefinition =

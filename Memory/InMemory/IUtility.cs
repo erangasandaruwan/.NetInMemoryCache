@@ -8,7 +8,7 @@ namespace Cache.InMemory
     public interface IUtility
     {
         List<string> GetAllEntityObjectList();
-        List<ICacheEntry> FindAllEntityObjects();
+        List<ICacheEntry> GetAllEntityObjects();
         void RemoveAllEntityObjects();
     }
 }
